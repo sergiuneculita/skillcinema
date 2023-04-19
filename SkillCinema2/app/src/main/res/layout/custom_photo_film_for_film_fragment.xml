@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="360dp">
+
+    <ImageView
+        android:id="@+id/image_film"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="@color/black"
+        android:src="@drawable/image_probe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/transparent_up"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:alpha="0.6"
+        android:src="@drawable/transparent_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/transparent_down"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:src="@drawable/treansparent_down"
+        app:layout_constraintBottom_toBottomOf="@+id/image_film"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#B5B5C9"
+            android:maxLines="1"
+            android:text="@string/john_wick"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+
+        <TextView
+            android:id="@+id/text_name_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#B5B5C9"
+            android:maxLines="1"
+            android:text="@string/lorem_ipsum"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <TextView
+            android:id="@+id/text_year_genre"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#B5B5C9"
+            android:maxLines="1"
+            android:text="@string/lorem_ipsum"
+            />
+        <TextView
+            android:id="@+id/text_country_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B5B5C9"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:text="@string/lorem_ipsum"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/like_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:src="@drawable/iconlike_icon" />
+
+            <ImageButton
+                android:id="@+id/save_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+
+                android:src="@drawable/iconsave_icon" />
+
+            <ImageButton
+                android:id="@+id/seen_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+
+                android:src="@drawable/icon_seen" />
+
+            <ImageButton
+                android:id="@+id/share_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:src="@drawable/iconshare_icon" />
+
+            <ImageButton
+                android:id="@+id/more_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:src="@drawable/iconmore_icon" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.FilmFragment">
+
+
+    <ScrollView
+        android:id="@+id/id_scrollViewPageFilm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+<com.example.skillcinema.presentation.customview.CustomPhotoFilmForFilmFragment
+    android:id="@+id/custom_photo_up"
+    android:layout_width="match_parent"
+    android:layout_height="360dp" >
+
+
+
+</com.example.skillcinema.presentation.customview.CustomPhotoFilmForFilmFragment>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26dp">
+                <TextView
+                    android:id="@+id/text_first_film_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/series_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/ButtonBack"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icon_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
